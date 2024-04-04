@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: auto;
+    max-width: 1200px;
+    background-color: #f6f6f7;
+}
+
+header{
+    background-color: #220efa;
+    padding: 20px;
+    font-size: 2rem;
+    color: #fff;
+    margin: 10px 0 50px;
+    border-radius: 15px;
+}
+
+input{
+    width: 300px;
+    padding:10px 8px ;
+    font-size: 1.2rem;
+    color: #220efa;
+    background: #f6f6f7;
+    border-radius: 8px;
+    margin: 25px 0;
+    border: #220efa solid 2px;
+
+}
+
+.filter{
+    margin-bottom: 30px;
+}
+
+.search-button{
+    height: 42px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    height: 35px;
+    width: 100px;
+    background-color: #220efa;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.Products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item{
+    width: 320px;
+    background-color: #fff;
+    margin: 30px 0;
+    border-radius: 20px;
+    padding: 15px;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.product-item img{
+    width: 290px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.product-item p{
+    margin: 10px 0 15px;
+    color: gray;
+}
+
+.product-item span{
+    display: inline-block;
+    margin-bottom: 0px;
+    background-color: #220efa;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.selected{
+    color: #220efa;
+    background-color: #f6f6f7;
+    border: #220efa solid 2px;
+}
+
+@media (max-width:1000px) {
+    #search{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    header{
+        margin: 10px;
+    }
+
+    .search-box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Products{
+        justify-content: center;
+    }
+
+    .product-item{
+        margin: 10px;
+    }
+}
